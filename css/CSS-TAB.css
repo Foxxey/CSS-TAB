@@ -1,0 +1,118 @@
+.CSSBtn {
+    text-align: center;
+    display: inline-block;
+    cursor: pointer;
+    font-size: 17px;
+    padding: 4px 8px;
+    margin-left: 8px;
+    float: right;
+    border-radius: 4px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap
+}
+
+.CSSBox2 {
+    color: #fff !important;
+    text-shadow: -1px -1px 0 #202020, 1px -1px 0 #202020, -1px 1px 0 #202020, 1px 1px 0 #202020, -2px -2px 0 #202020, 2px -2px 0 #202020, -2px 2px 0 #202020, 2px 2px 0 #202020, -3px -3px 0 #202020, 3px -3px 0 #202020, -3px 3px 0 #202020, 3px 3px 0 #202020;
+    border: 4px solid rgba(255, 255, 255, .5);
+    vertical-align: top;
+    position: relative;
+    display: inline-block;
+    background-color: rgba(0, 0, 0, .4);
+    text-align: center;
+    height: 20.4vw;
+    width: 20.4vw;
+    line-height: 500px;
+    cursor: pointer;
+    border-radius: 6px;
+    font-size: 23px;
+    margin: 5px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat
+}
+
+.CSSBox2:hover {
+    opacity: .8;
+    border: 4px solid #fff
+}
+
+.CSSBox2:hover .CSSIH {
+    display: block
+}
+
+.CSSBox {
+    border: 4px solid rgba(255, 255, 255, .5);
+    vertical-align: top;
+    position: relative;
+    display: inline-block;
+    background-color: rgba(0, 0, 0, .4);
+    text-align: center;
+    height: 165px;
+    line-height: 200px;
+    cursor: pointer;
+    border-radius: 6px;
+    font-size: 23px;
+}
+
+.CSSBox:hover {
+    opacity: .8;
+    border: 4px solid #fff
+}
+
+.CSSBox:hover .CSSIH {
+    display: block
+}
+
+.CSSIH {
+    display: none;
+    background-color: rgba(0, 0, 0, .85);
+    position: absolute;
+    height: 100%;
+    top: 0;
+    width: 100%
+}
+
+.CSSInf {
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    line-height: initial;
+    font-size: 27px
+}
+
+#loadingBg {
+    background-image:url("${backgrounds[Math.floor(Math.random() * backgrounds.length)]}");
+    background-size: 1920px 1080px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-origin: border-box
+}
+
+#initLoader {
+    display: none
+}
+
+#instructions>*>.lds-ring {
+    width: unset;
+    height: unset
+}
+
+#endUI,#instructions,#instructions>*>.lds-ring>*,#vignette,canvas {
+    display: none !important
+}
+
+#instructionHolder {
+    background-color: #0000 !important
+}
+
+#instructionsUpdate {
+    border-radius: 20px !important;
+    background-color: #000000d4;
+    backdrop-filter: blur(10px);
+    text-align: center;
+    box-shadow: 0 0 0 3pt #fff
+}
