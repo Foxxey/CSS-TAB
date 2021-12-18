@@ -10,10 +10,16 @@ let css = {
         name: 'Yuki Aim',
         creator: 'tae#4444'
     },
+    Lemonfish: {
+        name: 'Lemonfish',
+        creator: 'tae#4444'
+        
+        },
     xCirno: {
         name: 'xCirno',
-        creator: 'rei#0360'
+        creator: 'rei#0360'   
     },
+  
     Masu2: {
         name: 'Masu V2',
         creator: 'envy#9335'
