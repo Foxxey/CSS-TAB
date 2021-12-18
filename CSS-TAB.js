@@ -38,6 +38,10 @@ let css = {
     v79: {
         name: 'v79',
         creator: 'Sparki#5962'
+     },
+    OverWatch: {
+        name: 'OverWatch',
+        creator: 'NamekujiLSDs#7777'
     },
     Monochrome: {
         name: 'MONOCHROME',
