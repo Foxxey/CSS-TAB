@@ -12,9 +12,8 @@ let css = {
     },
     Lemonfish: {
         name: 'Lemonfish',
-        creator: 'tae#4444'
-        
-        },
+        creator: 'tae#4444'   
+    },
     xCirno: {
         name: 'xCirno',
         creator: 'rei#0360'   
