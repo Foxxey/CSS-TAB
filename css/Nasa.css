@@ -1,0 +1,1573 @@
+:root {
+--accent:red;
+--accent2:#7fffd4;
+--background:rgba(35,35,35,0.502);
+--hpammo:#26ff9a;
+}
+
+@font-face {
+font-family:gamefont;
+src:url(./fonts/BF_Modernista-Regular.ttf);
+}
+
+to {
+transform:rotate(360deg);
+}
+
+50% {
+transform:scale(1.3);
+}
+
+100% {
+transform:scale(1);
+}
+
+#uiBase.onMenu {
+backdrop-filter:grayscale(100%);
+}
+
+#uiBase.onMenu #chatList {
+background-color:transparent;
+text-align:left;
+margin-bottom:0;
+-webkit-mask-image:linear-gradient(tobottom,transparent25%,black75%);
+mask-image:linear-gradient(tobottom,transparent25%,black75%);
+background:linear-gradient(-90deg,transparent0%,transparent10%,var(--background) 100%;
+border-radius:0;
+padding-bottom:10px;
+}
+
+#uiBase.onMenu #chatHolder {
+left:30px;
+bottom:30px!important;
+}
+
+#uiBase.onMenu #chatInputHolder {
+background-color:transparent;
+border:none;
+border-radius:0;
+height:50px;
+line-height:50px;
+display:flex;
+justify-content:flex-end;
+background-image:linear-gradient(90deg,var(--background) 0 100%!important;
+border-left:5px solid var(--accent2);
+box-shadow:unset!important;
+padding:unset;
+}
+
+#uiBase.onMenu #chatInput {
+visibility:visible!important;
+border:none;
+text-align:left;
+font-size:18px;
+color:var(--accent2);
+width:auto;
+background-color:transparent;
+margin:unset 100px unset unset;
+padding:0;
+}
+
+#uiBase.onMenu .chatItem {
+background-color:transparent!important;
+background:0 0;
+line-height:1;
+font-size:17px;
+margin:2px;
+padding:10px;
+}
+
+#menuItemContainer {
+flex-direction:row;
+left:50%;
+top:30px;
+transform:translateX(-50%);
+width:1000px;
+height:80px;
+background-color:var(--background)!important;
+background:linear-gradient(toright,var(--accent2) 3px 4px 0 100in 3px 4px 100% 100in 3px 4px 0 100in 3px 4px 100% 100in 3px 4px 0 0 3px 4px 100% 0 3px 4px 0 0 3px 4px 100% 0;
+background-repeat:no-repeat;
+background-size:10px 10px;
+box-shadow:unset!important;
+padding:0!important;
+}
+
+.menuItem {
+height:80px;
+width:auto;
+background-color:transparent!important;
+}
+
+#menuBtnProfile:before {
+content:"Profile";
+font-size:20px!important;
+letter-spacing:2px!important;
+}
+
+#menuBtnShop:before {
+content:"Shop";
+letter-spacing:2px!important;
+font-size:20px!important;
+}
+
+.menuItem:hover {
+border:unset;
+transform:scale(1.2);
+}
+
+.menuItemTitle {
+font-size:20px!important;
+text-transform:uppercase;
+letter-spacing:1px;
+color:var(--accent2)!important;
+transition:.1s ease-in-out;
+margin:unset!important;
+}
+
+.headerBar {
+background-color:transparent!important;
+box-shadow:unset!important;
+}
+
+#signedOutHeaderBar {
+width:100%;
+height:100%;
+flex-direction:unset;
+align-items:flex-end;
+pointer-events:none;
+cursor:unset;
+}
+
+#signedOutHeaderBar>div {
+box-shadow:none!important;
+background-color:transparent!important;
+top:unset;
+bottom:30px;
+left:calc(50%-500px);
+height:63px;
+-webkit-backface-visibility:hidden;
+backface-visibility:hidden;
+font-size:0!important;
+padding-bottom:unset!important;
+width:70px!important;
+line-height:63px;
+border:unset!important;
+}
+
+#signedOutHeaderBar>div>span {
+color:var(--accent2)!important;
+font-size:40px!important;
+transition:.15s ease-in-out;
+}
+
+#signedInHeaderBar {
+left:calc(50%-510px);
+bottom:40px;
+top:unset;
+height:60px;
+-webkit-backface-visibility:hidden;
+backface-visibility:hidden;
+}
+
+#signedInHeaderBar>div:nth-child(1) {
+display:flex!important;
+flex-direction:row-reverse;
+justify-content:center;
+align-items:center;
+}
+
+.krInfo,.junkInfo {
+margin:unset;
+}
+
+.krInfo {
+position:fixed;
+left:calc(50%+100px);
+bottom:120px;
+height:55px;
+line-height:55px;
+width:380px;
+background-image:linear-gradient(-90deg,var(--background) 0 100%!important;
+text-align:right;
+padding-right:15px;
+border-right:5px solid var(--accent2);
+}
+
+#menuJNKCount {
+color:var(--accent2)!important;
+font-size:24px;
+margin-bottom:5px;
+}
+
+#menuJNKCount>span {
+color:var(--accent2)!important;
+font-size:24px!important;
+margin-top:4px;
+}
+
+#subLogoButtons {
+width:1050px;
+height:80px;
+display:flex!important;
+align-items:center;
+justify-content:center;
+bottom:30px!important;
+background-color:var(--background)!important;
+background:linear-gradient(toright,var(--accent2) 3px 4px 0 100in 3px 4px 100% 100in 3px 4px 0 100in 3px 4px 100% 100in 3px 4px 0 0 3px 4px 100% 0 3px 4px 0 0 3px 4px 100% 0;
+background-repeat:no-repeat;
+background-size:10px 10px;
+padding:unset;
+}
+
+#subLogoButtons>div {
+box-shadow:none!important;
+border:unset!important;
+border-radius:0;
+text-transform:uppercase;
+letter-spacing:1px;
+margin-top:5px;
+color:var(--accent2)!important;
+height:60px;
+background-color:transparent!important;
+line-height:60px;
+padding:10px!important;
+}
+
+#mailContainer {
+margin-left:20px;
+margin-right:15px;
+}
+
+#menuKRCount {
+font-size:24px;
+color:var(--accent2)!important;
+}
+
+#mailIcon {
+color:var(--accent2)!important;
+font-size:40px!important;
+}
+
+#classPreviewCanvas {
+visibility:visible;
+opacity:.7;
+bottom:110px;
+position:fixed;
+transform:scaleX(-1);
+transition:opacity .2s ease-in-out;
+}
+
+#menuClassContainer {
+right:unset;
+left:calc(50%-500px);
+width:1000px;
+bottom:0;
+top:unset;
+height:1000px;
+visibility:hidden;
+background-color:red!important;
+}
+
+#policeButton {
+bottom:-90px!important;
+position:fixed;
+visibility:visible;
+background-color:transparent!important;
+box-shadow:none!important;
+left:1040px;
+line-height:90px;
+border-radius:0;
+height:90px!important;
+border:unset!important;
+transition:.1s ease-in-out;
+}
+
+#policeButton.button.buttonB:active {
+transform:scale(.9)!important;
+}
+
+#policeButton:before {
+content:"local_police";
+font-family:material icons;
+font-size:45px;
+color:var(--accent2);
+}
+
+#customizeButton {
+visibility:visible;
+background-color:transparent!important;
+text-shadow:unset!important;
+font-size:0!important;
+width:auto!important;
+position:fixed;
+bottom:-76px;
+left:calc(50%+370px);
+transform:unset!important;
+border:unset!important;
+}
+
+#customizeButton>span {
+font-size:0!important;
+-webkit-backface-visibility:hidden;
+backface-visibility:hidden;
+transition:.1s ease-in-out;
+}
+
+#customizeButton>span:before {
+content:"auto_fix_high";
+font-family:material icons!important;
+font-size:50px;
+color:var(--accent2);
+}
+
+#uiBase.onMenu #spectButton {
+width:45px;
+right:calc(50%-500px);
+left:unset;
+z-index:1;
+bottom:48px;
+top:unset;
+border:unset!important;
+}
+
+#menuFPS,#menuPingDisplay .material-icons {
+color:var(--accent1)!important;
+}
+
+#spectButton span[style="font-size:15px;color:rgba(255,255,255,0.6)"] {
+color:transparent!important;
+}
+
+#spectButton .switchsml {
+position:absolute;
+width:100%;
+margin:0;
+}
+
+.sliderSml::before {
+content:"visibility_off";
+font-size:40px;
+color:var(--accent2);
+width:max-content;
+height:auto;
+background-color:transparent;
+text-align:center;
+transition-duration:.25s;
+font-family:material icons;
+}
+
+input:checked+.sliderSml::before {
+content:"visibility";
+transform:unset;
+}
+
+input:checked+.sliderSml {
+background-color:transparent!important;
+}
+
+.sliderSml {
+opacity:1;
+background-color:transparent;
+}
+
+#accManagerBtn {
+bottom:0!important;
+position:fixed;
+visibility:visible!important;
+display:block!important;
+background-color:transparent!important;
+box-shadow:none!important;
+left:0;
+transform:translate(1140px,220px) rotate(2.2deg);
+font-size:0!important;
+text-shadow:unset!important;
+pointer-events:none!important;
+cursor:unset!important;
+border:unset!important;
+}
+
+#accManagerBtn:before {
+content:"groups";
+font-family:material icons;
+font-size:50px!important;
+color:var(--accent2);
+pointer-events:all!important;
+cursor:pointer!important;
+}
+
+#weapDisplay {
+right:235px;
+bottom:65px;
+top:unset;
+z-index:10;
+background-color:transparent;
+}
+
+.weapItem {
+width:100px;
+padding-right:60px;
+height:45px;
+overflow:hidden;
+position:absolute;
+bottom:0;
+right:0;
+background:linear-gradient(90deg,rgba(35,35,35,.1) 0 100%;
+margin:10px;
+}
+
+.weapIcon[style*="opacity: 1"] {
+opacity:1!important;
+padding:0!important;
+}
+
+.weapIcon {
+filter:brightness(0) invert(1);
+transition-duration:.25s;
+height:45px;
+width:80px;
+opacity:0!important;
+padding-left:300px;
+z-index:11;
+}
+
+#weapIconMel {
+transform:translateY(25%);
+margin:0!important;
+}
+
+#bottomLeftHolder {
+position:absolute;
+width:400px;
+height:100px;
+background:linear-gradient(180deg,transparent0%,var(--background) 100%;
+}
+
+#hudClassIcon {
+background-color:transparent;
+display:none;
+}
+
+#roundsDisplay {
+margin-top:20px;
+height:70px;
+background-color:transparent;
+}
+
+#uiBase.onCompMenu #chatHolder {
+bottom:150px!important;
+}
+
+#uiBase.onGame #chatHolder {
+width:400px;
+border-radius:0;
+}
+
+#uiBase.onGame #chatList {
+border-radius:0;
+background-color:transparent;
+-webkit-mask-image:linear-gradient(tobottom,transparent25%,black75%);
+mask-image:linear-gradient(tobottom,transparent25%,black75%);
+background:linear-gradient(-90deg,transparent0%,transparent10%,var(--background) 100%;
+}
+
+#uiBase.onGame .chatItem {
+background-color:transparent!important;
+font-size:17px;
+line-height:1;
+margin:2px;
+padding:10px;
+}
+
+#uiBase.onGame #chatInputHolder {
+border:unset;
+border-radius:0;
+height:42px;
+line-height:42px;
+background-color:transparent;
+box-shadow:unset!important;
+background:linear-gradient(-90deg,transparent0%,transparent10%,var(--background) 100%;
+padding:unset!important;
+}
+
+#uiBase.onGame #chatInput {
+border:unset;
+background-color:transparent;
+transform:translateX(-50px);
+color:var(--accent2);
+font-size:18px;
+}
+
+#uiBase.onGame #chatInputHolder:after {
+content:"";
+position:absolute;
+left:0;
+bottom:0;
+background-color:var(--accent2);
+width:5px;
+height:42px;
+}
+
+#healthBar {
+height:20px!important;
+background-color:var(--background);
+width:350px;
+display:flex;
+position:fixed;
+left:45px;
+bottom:50px;
+margin-bottom:unset!important;
+box-shadow:unset!important;
+border:unset!important;
+border-radius:0!important;
+padding:unset;
+}
+
+.healthBarSeg {
+margin-right:-2px;
+border-radius:0!important;
+width:0;
+background-color:transparent!important;
+border:unset!important;
+}
+
+.hpBSeg {
+border-radius:0;
+box-shadow:none!important;
+background-color:var(--hpammo)!important;
+}
+
+.healthBarSeg:last-child .hpBSeg[style*="width:100%"] {
+border-top-right-radius:0!important;
+border-bottom-right-radius:0!important;
+}
+
+.healthBarSeg:first-child .hpBSeg {
+border-top-left-radius:0!important;
+border-bottom-left-radius:0!important;
+}
+
+#healthValueHolder {
+background-color:transparent!important;
+border:unset!important;
+box-shadow:unset!important;
+}
+
+#healthValue {
+font-size:50px;
+position:fixed;
+left:50px;
+bottom:70px;
+letter-spacing:2px;
+color:var(--accent2);
+}
+
+#bottomRight {
+position:absolute;
+width:400px;
+height:100px;
+background:linear-gradient(180deg,transparent0%,var(--background) 100%;
+bottom:30px;
+}
+
+#ammoDisplay {
+position:fixed;
+display:flex;
+width:350px;
+height:20px;
+right:70px;
+bottom:50px;
+border-radius:0;
+background-image:linear-gradient(90deg,var(--hpammo) 0 100%!important;
+background-color:var(--background)!important;
+-moz-transform:translateZ(0) rotate(180deg);
+-ms-transform:translateZ(0) rotate(180deg);
+-o-transform:translateZ(0) rotate(180deg);
+transform:translateZ(0) rotate(180deg);
+border:unset!important;
+box-shadow:0!important;
+padding:unset;
+}
+
+#ammoDisplay[style*="background-size: 0%;"] {
+background-size:100%!important;
+}
+
+#ammoVal {
+position:fixed;
+top:20px;
+left:10px;
+font-size:50px;
+letter-spacing:2px;
+color:var(--accent2);
+transform:rotate(180deg);
+}
+
+#reloadMsg {
+bottom:calc(50%-300px);
+border:none;
+color:var(--accent2);
+font-family:material icons;
+font-size:0;
+animation:rotate 1s infinite ease-in-out;
+background-color:var(--background);
+width:60px;
+left:calc(50%-30px);
+height:60px;
+line-height:60px;
+text-align:center;
+border-radius:100%;
+padding:unset;
+}
+
+#reloadMsg::before {
+content:"autorenew";
+font-size:45px;
+}
+
+#timerDisplay {
+width:200px;
+text-align:center;
+border-radius:0;
+background:linear-gradient(0deg,transparent0%,var(--background) 100%;
+background-color:transparent;
+left:50%;
+position:fixed;
+transform:translateX(-50%);
+top:20px;
+}
+
+#leaderDisplay {
+background:linear-gradient(0deg,transparent0%,var(--background) 100%;
+width:360px;
+padding-bottom:20px;
+padding-top:20px;
+border-radius:5px!important;
+border:unset!important;
+background-color:unset!important;
+box-shadow:unset!important;
+}
+
+.leaderItem {
+background-color:transparent;
+margin-bottom:5px;
+font-size:19px!important;
+}
+
+#fpsDisplay {
+background-color:transparent;
+background:linear-gradient(-90deg,transparent0%,transparent10%,var(--background) 100%;
+padding-left:20px;
+line-height:40px;
+height:40px;
+width:200px;
+}
+
+#pingDisplay {
+background-color:transparent;
+background:linear-gradient(-90deg,transparent0%,transparent10%,var(--background) 100%;
+padding-left:20px;
+line-height:40px;
+height:40px;
+width:200px;
+margin-top:10px;
+margin-bottom:10px;
+}
+
+#pingText::after {
+content:" PING";
+color:rgba(255,255,255,.5)!important;
+}
+
+.topRightCounters {
+position:fixed;
+display:flex;
+width:auto!important;
+background:linear-gradient(180deg,transparent0%,var(--background) 100%;
+bottom:30px;
+top:unset;
+right:unset;
+left:50%;
+height:50px;
+transform:translateX(-50%);
+padding-top:10px;
+}
+
+.countIcon {
+background-color:transparent!important;
+padding-left:15px;
+padding-right:15px;
+border:0!important;
+box-shadow:unset!important;
+}
+
+#killsVal,#deathsVal,#streakVal,#myScoreVal,#livesDisp,#kdVal {
+color:var(--accent2);
+font-size:24px;
+}
+
+#killsVal:after {
+content:' K';
+display:inline;
+font-size:24px;
+text-align:center;
+}
+
+#deathsVal:after {
+content:' D';
+display:inline;
+font-size:24px;
+text-align:center;
+}
+
+#streakVal:after {
+content:' S';
+display:inline;
+font-size:24px;
+text-align:center;
+}
+
+#myScoreVal:after {
+content:' P';
+display:inline;
+font-size:24px;
+text-align:center;
+}
+
+#kdVal:after {
+content:' K/D';
+display:inline;
+font-size:24px;
+text-align:center;
+}
+
+#livesDisp:after {
+content:' L';
+display:inline;
+font-size:24px;
+text-align:center;
+}
+
+#killStreakHolder {
+position:fixed;
+bottom:30px;
+right:450px;
+margin-right:0;
+margin-bottom:0;
+}
+
+.killStreakItem {
+width:70px;
+height:70px;
+background-color:transparent;
+margin-left:unset;
+}
+
+.killStreakItem>span {
+vertical-align:unset;
+float:unset;
+margin-top:unset;
+font-size:12px;
+text-shadow:unset;
+color:var(--accent2);
+line-height:70px;
+text-align:center;
+background-color:var(--background);
+border-radius:100%;
+padding:10px;
+}
+
+.killStreakItem::before {
+content:"";
+position:absolute;
+z-index:-1;
+top:0;
+bottom:0;
+left:0;
+right:0;
+background:linear-gradient(180deg,transparent0%,transparent10%,var(--background) 100%;
+}
+
+#gameMessage[style*="display: none;"] {
+width:0;
+transition:.15s ease-in-out;
+opacity:0;
+}
+
+#gameMessage[style*="display: block;"] {
+background-color:var(--background);
+width:auto;
+left:50%;
+transform:translateX(-50%);
+top:120px;
+font-size:20px;
+color:var(--accent2);
+opacity:1;
+position:fixed;
+padding:5px 20px;
+}
+
+#teamScores {
+visibility:hidden;
+}
+
+#tScoreV1 {
+visibility:visible;
+position:fixed;
+color:var(--accent2);
+top:20px;
+width:auto;
+height:40px;
+background-color:var(--background);
+text-align:center;
+line-height:40px;
+padding-left:20px;
+padding-right:20px;
+transform:translateX(calc(-50%-160px));
+left:50%;
+}
+
+#tScoreV2 {
+visibility:visible;
+position:fixed;
+color:var(--accent2);
+top:20px;
+width:auto;
+height:40px;
+background-color:var(--background);
+text-align:center;
+line-height:40px;
+padding-left:20px;
+padding-right:20px;
+transform:translateX(calc(-50%+160px));
+left:50%;
+}
+
+#roundsVal {
+color:var(--accent2);
+font-size:18px;
+}
+
+#roundSub {
+color:rgba(255,255,255,.5);
+font-size:18px;
+margin-left:2px;
+}
+
+#policePopC {
+background-color:var(--background)!important;
+color:var(--accent2)!important;
+}
+
+#policePopC:after {
+content:"";
+position:absolute;
+z-index:-1;
+top:0;
+bottom:0;
+left:0;
+right:0;
+background:linear-gradient(toright,var(--accent2) 3px 4px 0 100in 3px 4px 100% 100in 3px 4px 0 100in 3px 4px 100% 100in 3px 4px 0 0 3px 4px 100% 0 3px 4px 0 0 3px 4px 100% 0;
+background-repeat:no-repeat;
+background-size:20px 20px;
+}
+
+#policePopC>div.menuTabsNew>div {
+background-color:var(--background);
+color:var(--accent);
+border-color:var(--accent);
+}
+
+#policePopC>div.menuTabsNew>div.menuTabNew.tabANew {
+color:var(--accent2);
+border-color:var(--accent2);
+}
+
+.policeJoinB {
+color:var(--accent)!important;
+background-color:var(--background);
+border-radius:0;
+}
+
+.policeJoinB:hover {
+color:var(--accent2)!important;
+opacity:1;
+}
+
+.weaponChatIcon {
+filter:brightness(0) invert(1);
+height:20px;
+width:40px;
+}
+
+.headShotChatIcon {
+height:20px;
+filter:brightness(0) invert(1);
+width:20px;
+}
+
+#specContr {
+background:linear-gradient(-90deg,var(--background) 0 100%;
+border:unset;
+padding-right:20px;
+padding-left:80px;
+}
+
+#specStats {
+background:linear-gradient(90deg,var(--background) 0 100%;
+padding-right:80px;
+border-radius:0;
+padding-left:20px;
+}
+
+#spectHPV {
+text-shadow:unset;
+color:var(--accent2);
+left:270px;
+top:47px;
+background-color:var(--background);
+padding-left:10px;
+padding-right:10px;
+}
+
+#spectHPBI {
+background-color:var(--accent)!important;
+}
+
+#roundsDisplay>div:nth-child(2) {
+visibility:hidden;
+width:240px;
+}
+
+.roundScrV {
+height:70px;
+background-color:var(--background);
+line-height:70px;
+}
+
+#killCard {
+position:fixed;
+display:flex!important;
+background-color:var(--background)!important;
+width:1340px;
+left:calc(50%);
+transform:translateX(-50%);
+height:220px;
+flex-direction:row;
+flex-grow:1;
+bottom:20px;
+justify-content:space-around;
+background:linear-gradient(toright,var(--accent2) 3px 4px 0 100in 3px 4px 100% 100in 3px 4px 0 100in 3px 4px 100% 100in 3px 4px 0 0 3px 4px 100% 0 3px 4px 0 0 3px 4px 100% 0;
+background-repeat:no-repeat;
+background-size:20px 20px;
+z-index:1!important;
+border-radius:unset;
+border:unset!important;
+box-shadow:unset;
+}
+
+#kCProfile {
+display:flex!important;
+order:0;
+height:60%;
+width:auto!important;
+border-right:5px solid var(--accent2);
+background-color:var(--background);
+margin-right:20px;
+padding:20px 50px;
+}
+
+#killCard>div.kClvl {
+order:2;
+background-color:var(--background);
+width:calc(100%-40px);
+height:40px;
+justify-self:flex-end;
+justify-content:flex-end;
+align-items:flex-end;
+align-self:flex-end;
+bottom:10px;
+left:10px;
+text-shadow:unset!important;
+color:var(--accent);
+line-height:40px;
+text-align:right;
+padding-right:20px;
+}
+
+#killCard>div.kClvl:before {
+content:"National Aeronautics and Space Administration";
+position:absolute;
+left:50%;
+padding-left:20px;
+line-height:40px;
+transform:translateX(-50%);
+}
+
+#kCInfoS {
+display:flex;
+position:unset;
+font-size:70px;
+width:300px;
+height:78%;
+color:var(--accent)!important;
+bottom:unset;
+align-items:center;
+justify-content:center;
+justify-self:flex-end;
+order:5;
+border-left:5px solid var(--accent2);
+box-sizing:border-box;
+background-color:var(--background);
+padding-left:100px;
+padding-right:100px;
+margin-left:20px;
+}
+
+#kCInfo {
+position:unset!important;
+display:flex!important;
+font-size:0;
+height:78%;
+background-color:var(--background);
+width:100%;
+order:4;
+align-self:flex-start;
+z-index:2!important;
+border-right:5px solid var(--accent2);
+border-left:5px solid var(--accent2);
+background-image:url(../img/custom/kill.png);
+background-repeat:no-repeat;
+background-size:20%;
+background-position:center;
+margin:unset;
+}
+
+#killCardMsg {
+position:fixed;
+bottom:300px;
+width:1340px;
+background-color:var(--background)!important;
+left:50%;
+transform:translateX(-50%);
+background:linear-gradient(toright,var(--accent2) 3px 4px 0 100in 3px 4px 100% 100in 3px 4px 0 100in 3px 4px 100% 100in 3px 4px 0 0 3px 4px 100% 0 3px 4px 0 0 3px 4px 100% 0;
+background-repeat:no-repeat;
+background-size:20px 20px;
+padding:10px;
+}
+
+#kCStat {
+bottom:5px;
+left:20px;
+color:var(--accent)!important;
+}
+
+#kCName {
+position:absolute;
+left:110px;
+bottom:295px;
+color:var(--accent2);
+}
+
+#killCardBy {
+color:var(--accent);
+margin-left:10px;
+}
+
+#leaderContainer>div>i {
+margin-top:0!important;
+}
+
+#kCProfile[src*="https://assets.krunker.io/textures/classes/icon_0.png"] {
+content:url(https://assets.krunker.io/textures/weapons/icon_2.png);
+}
+
+#kCProfile[src*="https://assets.krunker.io/textures/classes/icon_1.png"] {
+content:url(https://assets.krunker.io/textures/weapons/icon_1.png);
+}
+
+#kCProfile[src*="https://assets.krunker.io/textures/classes/icon_2.png"] {
+content:url(https://assets.krunker.io/textures/weapons/icon_4.png);
+}
+
+#kCProfile[src*="https://assets.krunker.io/textures/classes/icon_3.png"] {
+content:url(https://assets.krunker.io/textures/weapons/icon_7.png);
+}
+
+#kCProfile[src*="https://assets.krunker.io/textures/classes/icon_4.png"] {
+content:url(https://assets.krunker.io/textures/weapons/icon_6.png);
+}
+
+#kCProfile[src*="https://assets.krunker.io/textures/classes/icon_5.png"] {
+content:url(https://assets.krunker.io/textures/weapons/icon_5.png);
+}
+
+#kCProfile[src*="https://assets.krunker.io/textures/classes/icon_6.png"] {
+content:url(https://assets.krunker.io/textures/weapons/icon_8.png);
+}
+
+#kCProfile[src*="https://assets.krunker.io/textures/classes/icon_7.png"] {
+content:url(https://assets.krunker.io/textures/weapons/icon_9.png);
+}
+
+#kCProfile[src*="https://assets.krunker.io/textures/classes/icon_8.png"] {
+content:url(https://assets.krunker.io/textures/weapons/icon_10.png);
+}
+
+#kCProfile[src*="https://assets.krunker.io/textures/classes/icon_9.png"] {
+content:url(https://assets.krunker.io/textures/weapons/icon_0.png);
+}
+
+#kCProfile[src*="https://assets.krunker.io/textures/classes/icon_10.png"] {
+content:url(https://assets.krunker.io/textures/weapons/icon_11.png);
+}
+
+#kCProfile[src*="https://assets.krunker.io/textures/classes/icon_11.png"] {
+content:url(https://assets.krunker.io/textures/weapons/icon_14.png);
+}
+
+#kCProfile[src*="https://assets.krunker.io/textures/classes/icon_12.png"] {
+content:url(https://assets.krunker.io/textures/weapons/icon_15.png);
+}
+
+#kCProfile[src*="https://assets.krunker.io/textures/classes/icon_13.png"] {
+content:url(https://assets.krunker.io/textures/weapons/icon_19.png);
+}
+
+#endTabbedView {
+min-width:1000px;
+display:inline-block;
+vertical-align:top;
+}
+
+#endMidHolder {
+top:320px!important;
+}
+
+.endCard {
+border-radius:0;
+display:flex;
+background-color:var(--background)!important;
+background:linear-gradient(toright,var(--accent2) 3px 4px 0 100in 3px 4px 100% 100in 3px 4px 0 100in 3px 4px 100% 100in 3px 4px 0 0 3px 4px 100% 0 3px 4px 0 0 3px 4px 100% 0;
+background-repeat:no-repeat;
+background-size:20px 20px;
+box-shadow:unset!important;
+}
+
+#tabHolder {
+display:flex;
+width:220px;
+height:auto;
+background-color:var(--background);
+margin-right:10px;
+flex-direction:column;
+margin-bottom:unset;
+}
+
+.tabHeader {
+border-left:5px solid var(--accent);
+color:var(--accent)!important;
+border-bottom:unset!important;
+background-color:var(--background);
+height:40px;
+line-height:40px;
+margin:5px;
+}
+
+.tabHeader.selected {
+border-bottom:unset;
+color:var(--accent2)!important;
+border-color:var(--accent2);
+}
+
+#endTable>tbody>tr>th {
+border:unset!important;
+color:var(--accent);
+}
+
+#endTable {
+background-color:var(--background)!important;
+border-radius:0;
+}
+
+.tabBody {
+width:100%;
+}
+
+#endTimer {
+visibility:hidden!important;
+}
+
+#endInfo[style*="display: block;"] #endTimer {
+background-color:var(--background)!important;
+width:1000px;
+height:80px;
+margin-top:130px;
+background:linear-gradient(toright,var(--accent2) 3px 4px 0 100in 3px 4px 100% 100in 3px 4px 0 100in 3px 4px 100% 100in 3px 4px 0 0 3px 4px 100% 0 3px 4px 0 0 3px 4px 100% 0;
+background-repeat:no-repeat;
+background-size:20px 20px;
+line-height:80px;
+font-size:40px;
+font-style:unset;
+color:var(--accent2);
+text-shadow:unset!important;
+visibility:visible!important;
+}
+
+#matchVoteHolder[style*="display: inline-block"] {
+width:1000px;
+display:flex!important;
+flex-direction:row;
+justify-content:space-evenly;
+left:50%;
+background-color:var(--background)!important;
+background:linear-gradient(toright,var(--accent2) 3px 4px 0 100in 3px 4px 100% 100in 3px 4px 0 100in 3px 4px 100% 100in 3px 4px 0 0 3px 4px 100% 0 3px 4px 0 0 3px 4px 100% 0;
+background-repeat:no-repeat;
+background-size:20px 20px;
+align-items:center;
+padding-top:5px;
+border-radius:0;
+padding-bottom:5px;
+}
+
+.matchVote {
+display:flex!important;
+align-items:center;
+justify-content:center;
+flex-direction:column;
+text-shadow:unset;
+border:unset!important;
+border-radius:unset;
+transition:.15s ease-in-out;
+transform:scale(.9)!important;
+margin:unset;
+}
+
+.matchVote:before {
+content:"";
+position:absolute;
+top:0;
+bottom:0;
+left:0;
+right:0;
+background:linear-gradient(toright,var(--accent2) 3px 4px 0 100in 3px 4px 100% 100in 3px 4px 0 100in 3px 4px 100% 100in 3px 4px 0 0 3px 4px 100% 0 3px 4px 0 0 3px 4px 100% 0;
+background-repeat:no-repeat;
+background-size:20px 20px;
+pointer-events:none;
+z-index:10;
+background-color:var(--background);
+}
+
+.matchVote>div {
+display:flex;
+position:unset;
+text-shadow:unset!important;
+text-align:center;
+color:var(--accent2)!important;
+z-index:11;
+}
+
+#tabHolder:after {
+content:"NASA LTD ⓒ";
+color:var(--accent2);
+text-align:center;
+height:100%;
+display:flex;
+justify-content:center;
+align-items:flex-end;
+padding-bottom:10px;
+font-size:15px;
+}
+
+#uiBase.onMenu #aMerger {
+position:fixed;
+left:calc(50%);
+top:120px;
+transform:translateX(-50%);
+}
+
+#uiBase.onEndScrn #endAHolderR {
+position:fixed!important;
+right:calc(50%-1000px);
+}
+
+#uiBase.onEndScrn #endAHolderL {
+position:fixed!important;
+left:calc(50%-1000px);
+}
+
+.kfItem {
+border:unset!important;
+border-right:5px solid var(--accent2)!important;
+padding-right:10px;
+padding-left:80px;
+border-radius:0!important;
+background:linear-gradient(90deg,transparent0%,transparent10%,var(--background) 100%;
+}
+
+#teamTotal0 {
+position:fixed;
+left:calc(50%-470px);
+top:145px;
+background-color:var(--background);
+}
+
+#teamTotal1 {
+position:fixed;
+right:calc(50%-470px);
+top:145px;
+background-color:var(--background);
+}
+
+#specKPDContr {
+background-color:var(--background)!important;
+border-radius:0;
+background:linear-gradient(toright,var(--accent2) 3px 4px 0 100in 3px 4px 100% 100in 3px 4px 0 100in 3px 4px 100% 100in 3px 4px 0 0 3px 4px 100% 0 3px 4px 0 0 3px 4px 100% 0;
+background-repeat:no-repeat;
+background-size:20px 20px;
+}
+
+.gfSection,.endSection,.crStat,#kdLayout {
+background-color:var(--background);
+border-radius:0;
+border-color:transparent;
+}
+
+#menuClassContainer:hover #menuClassNameTag {
+visibility:visible;
+transform:translateX(-50%) scale(1);
+}
+
+#menuClassNameTag {
+visibility:visible;
+margin-top:unset;
+position:fixed;
+left:50%;
+transform:translateX(-50%) scale(0);
+background-color:var(--background);
+border-left:5px solid var(--accent2);
+border-right:5px solid var(--accent2);
+bottom:320px;
+overflow:hidden;
+height:30px;
+transition:all .2s ease-in-out;
+padding:10px 20px;
+}
+
+.menuClassLevelBox {
+background-color:transparent;
+}
+
+#uiBase.onMenu #termsInfo {
+background-image:linear-gradient(90deg,var(--background) 0 100%!important;
+position:fixed;
+right:unset;
+left:calc(50%-500px);
+bottom:120px;
+background-color:transparent!important;
+border-radius:0;
+border-left:5px solid var(--accent2);
+width:380px;
+box-shadow:unset!important;
+}
+
+#uiBase.onMenu .terms {
+font-size:20px!important;
+color:var(--accent);
+padding:unset!important;
+}
+
+#tlInfHold {
+position:fixed;
+left:unset;
+right:30px;
+top:30px;
+}
+
+.freeKRIcon {
+height:47px;
+}
+
+.youNewDiv {
+background-color:var(--background);
+margin-top:unset;
+margin-bottom:10px;
+}
+
+#streamContainer {
+position:fixed;
+left:30px;
+top:30px;
+background-color:var(--background)!important;
+box-shadow:unset!important;
+}
+
+#menuServerInfoContainer {
+position:fixed;
+bottom:30px;
+right:30px;
+display:flex!important;
+flex-direction:row;
+justify-content:flex-end;
+align-items:center;
+background-image:linear-gradient(-90deg,var(--background) 0 100%!important;
+border-right:5px solid var(--accent2);
+padding:10px 10px 10px 40px;
+}
+
+#menuServerInfoContainer>div {
+font-size:19px;
+margin-left:10px;
+margin-bottom:5px;
+color:var(--accent2);
+margin-top:5px;
+}
+
+#menuFPS,#menuPingText {
+font-size:19px;
+color:var(--accent2)!important;
+}
+
+#menuFPSDisplay {
+font-size:19px;
+}
+
+#menuPingDisplay:after {
+content:" PING";
+font-size:19px;
+}
+
+.krSaleIcon {
+margin-bottom:-8px;
+}
+
+#menuWindow {
+top:50%;
+max-height:calc(100%-250px)!important;
+}
+
+.leftUIB {
+border:unset!important;
+background-color:unset!important;
+box-shadow:unset!important;
+}
+
+#newsHolder,#mainLogo,#seasonLabel,#onetrust-consent-sdk,#mapInfo,.imageButton,#editorBtnM,.progressBar,#uiBase.onSpect .topRightCounters,#uiBase.onDeathScrn #chatHolder {
+display:none!important;
+}
+
+.buttonO,.button,.buttonO:hover,.button:hover {
+border:unset!important;
+}
+
+#uiBase.onMenu #chatInput::placeholder,#uiBase.onGame #chatInput::placeholder {
+color:var(--accent2);
+text-transform:uppercase;
+}
+
+#menuItemContainer>div>span,.menuItemIcon,.verticalSeparator,#mLevelCont,#menuUsernameContainer,.krSocial,.menuSocialB,#braveWarning,#faceItIconM,#bubbleContainer,#policeButton>img,#menuClassSubtext,#menuClassName,#menuPingDisplay .material-icons,.weapKey,::-webkit-scrollbar,#chatSwitch,#voiceDisplay,#maxHP,#challIcon,#ammoIcon,#ammoMax,#curGameInfo,#timerIcon,#pingIcon,#killsIcon,#deathsIcon,#streakIcon,#kdIcon,.countIcon .material-icons,.killStreakCnt,#killCard>div:nth-child(3),#killCard>br,#victorySub,#uiBase.onMenu .verticalSeparatorInline,#rankedSoonTm {
+display:none;
+}
+
+#menuBtnProfile,#menuBtnShop {
+font-size:0!important;
+letter-spacing:0!important;
+}
+
+.menuItem:active,#signedOutHeaderBar>div:active>span,#subLogoButtons>div:active,#customizeButton:active>span {
+transform:scale(.9);
+}
+
+#signedOutHeaderBar>div:hover>span,#subLogoButtons>div:hover,#customizeButton:hover>span {
+transform:scale(1.2);
+}
+
+#mailCount,#timerVal,#pingText,#networkLag>div,#voteToKick>div,.callRegion,#specContr>div,.teamTotalScore,.crVal,.endTitle {
+color:var(--accent2);
+}
+
+#menuKRCount>span,.chatMsg[style="color:#fc03ec"],.chatMsg span[style*="#fff"],.chatMsg span[style*="#9eeb56"],#ingameFPS,.leaderNameM,.leaderNameF,.leaderScore,.leaderCounter,#policePopC>div,#kpdCalls>div>a,#policePopC [style="color:rgba(0,0,0,0.3);margin-right:12px"],#policePopC [style="margin-top:0px;color:rgba(0,0,0,0.6)"],#policePopC [style="color:rgba(0,0,0,0.6);font-size:19px"],.specPHead,#kCStat>span,#killCardKick>span,.endTableN,#endTable>tbody>tr>td>span,#specKPDContr>div,#specKPDContr>div>span,#specKPDContr>div>div>span,#fundsLayout>div>span,#uiBase.onMenu .terms.standout {
+color:var(--accent2)!important;
+}
+
+#policeButton.button.buttonB:hover,.matchVote:hover {
+transform:scale(1.2)!important;
+}
+
+.weapItem:after,#networkLag:after,#voteToKick:after,#gameMessage[style*="display: block;"]:after,#tScoreV1:before,#specStats:after {
+content:"";
+position:absolute;
+left:0;
+top:0;
+bottom:0;
+background-color:var(--accent2);
+width:5px;
+}
+
+#bottomLeftHolder::after,#bottomRight:after,.topRightCounters:after,.killStreakItem:after {
+content:"";
+position:absolute;
+z-index:-1;
+top:0;
+bottom:0;
+left:0;
+right:0;
+background:linear-gradient(toright,var(--accent2) 3px 4px 0 100in 3px 4px 100% 100in 3px 4px 0 100in 3px 4px 100% 100%;
+background-repeat:no-repeat;
+background-size:20px 20px;
+}
+
+.chatMsg span[style*="#eb5656"],.leaderName,.LeaderName,.LeaderNameF,#networkLagHed,#voteKickKeys>span,#policePopC [style="width:97%;color:rgba(0,0,0,0.6);text-align:left;padding:10px;border-bottom: 2px solid rgba(0,0,0,0.2);"],#specContr>div>span,#endTable>tbody>tr>td {
+color:var(--accent)!important;
+}
+
+#timerDisplay::after,.leaderItem::after {
+content:"";
+position:absolute;
+top:0;
+bottom:0;
+left:0;
+right:0;
+background:linear-gradient(toright,var(--accent2) 3px 4px 0 0 3px 4px 100% 0 3px 4px 0 0 3px 4px 100% 0;
+background-repeat:no-repeat;
+background-size:20px 20px;
+}
+
+#fpsDisplay:after,#pingDisplay:after {
+content:"";
+position:absolute;
+left:0;
+background-color:var(--accent2);
+width:5px;
+height:40px;
+}
+
+#networkLag,#voteToKick {
+text-align:left;
+border-radius:unset;
+padding-left:20px;
+width:200px;
+margin-top:10px;
+background:linear-gradient(-90deg,transparent0%,transparent10%,var(--background) 100%;
+}
+
+#gameMessage[style*="display: block;"]:before,#tScoreV2:before,#specContr:after {
+content:"";
+position:absolute;
+right:0;
+top:0;
+bottom:0;
+background-color:var(--accent2);
+width:5px;
+}
+
+.specLevelBox,#aContainer {
+background-color:var(--background)!important;
+}
+
+#killCardKick,.crLabel,.xpLvl {
+color:var(--accent);
+}
+
+#modList>div>div.mapListItem>div,#modList>div>div.mapListItem>div>span {
+font-size:20px!important;
+}
