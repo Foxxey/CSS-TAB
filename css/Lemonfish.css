@@ -1,0 +1,135 @@
+/*
+LEMONFISH CSS
+CSS by tae
+
+IGN: びこ
+Site: https://whuuayu.github.io/krunker
+
+--Install Instructions--
+    Right Click This Page and Click "Save Page As..."
+
+--Changelog and License Info--
+    https://github.com/whuuayu/lemonfish-css
+
+If you want to push an update or your name on the CSS, please consider donating <3
+*/
+
+/*The URL below is used for automatically updating the CSS, DO NOT TOUCH IT*/
+@import url(https://whuuayu.github.io/lemonfish-css/lemonfish.css);
+
+/*Customization Settings/設定*/
+
+:root {
+    /*Main Colors*/
+    --accent: #fcd66e; /*main color*/
+    --health: #29d6a6; /*health number only, health bar still changed via settings*/
+    --ammo: #ffffff; /*ammo number*/
+    --enemy: #f05f5f; /*enemy names*/
+    --friendly: #29d6a6; /*teammate names*/
+
+    /*Debug Colors*/
+    --good: #29d6a6;
+    --neutral: #fcd66e;
+    --bad: #f05f5f;
+
+    /*HUD*/
+    --hud-text-shadow: 0px 0px 4px rgba(0,0,0,0.75); /*set all values to 0 to improve performance*/
+    --hud-img-shadow: 0px 0px 2px rgba(0,0,0,0.75); /*set all values to 0 to improve performance*/
+    --healthbar-opacity: 0; /*0 = invisible, 100 = max opacity*/
+}
+
+/*English Font*/
+
+@font-face {
+    font-family: gamefont;
+    src: url(https://raw.githubusercontent.com/Yadub/BoulderBox/master/fonts/Fontfabric---Mont-Heavy.otf);
+}
+
+/*日本語フォント*/
+
+@font-face {
+    font-family: jp;
+    src: url(https://raw.githubusercontent.com/googlefonts/noto-cjk/main/Sans/OTF/Japanese/NotoSansCJKjp-Black.otf);
+}
+
+/*देवनागरी*/
+
+@font-face {
+    font-family: dv;
+    src: url(https://raw.githubusercontent.com/googlefonts/noto-fonts/main/archive/hinted/NotoSansDevanagari/NotoSansDevanagari-Black.ttf);
+}
+
+/*Add Personal Edits Below*/
+#initLoader {
+  background-image: url("https://cdn.discordapp.com/attachments/892463505943445554/921877749650587738/wallpaperbetter.com_1920x1080_5.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+}
+.lC-cube::after {
+  animation: load 3s cubic-bezier(0.3, 0.3, 0.3, 0.3);
+  background-color: var(--accent);
+  background-image: url(https://cdn.discordapp.com/attachments/873272800167755837/939820579182239784/3ccdd2a5ce7f7c2b389dd40f31e9f832.gif);
+  background-size: cover;
+  height: 95px;
+  content: "";
+  width: 100%;
+}
+#loadGamNm {
+    display: none !important;
+}
+#loadInfoRHolder {
+    color: #fff;
+    font-size: 0;
+    background-color: #000;
+    padding: 4px 8px;
+    box-shadow: 4px 4px var(--accent);
+}
+
+#loadTipsHolder {
+    color: var(--text-color);
+    font-size: 0;
+}
+{
+ cursor: url(https://cdn.custom-cursor.com/db/7647/32/meme-pop-cat-pointer.png) , pointer;
+}
+{
+    cursor: url(https://cdn.custom-cursor.com/db/7648/32/meme-pop-cat-cursor.png) , default !important
+}
+#loadTipsHolder::before {
+    content: "";
+    font-size: 0px;
+    color: #131313;
+    background-color: var(--accent);
+    padding: 0 32px;
+    padding-top: 12px;
+}
+
+#loadTipsHolder::after {
+    content: "";
+    font-size: 0px;
+    color: #131313;
+    position: absolute;
+    right: 36px;
+    bottom: 4px;
+}
+#loadInfoLHolder::before {
+    content: "";
+    font-size: 0px;
+}
+#lC-cont::before {
+    content: " ";
+    display: block;
+    width: 0px;
+    height: 0px;
+    background-color: var(--accent);
+    animation: loader 2s ease infinite;
+    background-image: url();
+    background-size: 75%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#loadInfoRHolder::before {
+    content: "";
+    font-size: 0px;
+}
