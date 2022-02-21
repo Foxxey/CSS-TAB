@@ -1,0 +1,293 @@
+/*Made by NukeMarvin*/
+
+:root {
+    --accent: #c49774;
+    --accent2: #916e5b;
+}
+
+/*ads*/
+
+#claimPop, #popupBack, #aHolder, .endAHolder, #onetrust-consent-sdk, #newsHolder, #streamContainer, .krSocial, .imageButton, #editorBtnM {
+    display: none !important;
+}
+
+/*Main Part*/
+
+#mainLogo {
+    content: url(https://cdn.discordapp.com/attachments/605348197241585666/934055250489405510/Unbenannt.png);
+}
+
+a, a:active, a:visited {
+    color: var(--accent);
+}
+
+.menBtnIcn, .material-icons, #ingameFPS, #menuFPS, .newLeaderName, .leaderName, .endTableN[style*="#eb5656"] {
+    color: var(--accent) !important;
+}
+
+.button {
+    border-color: var(--accent2) !important;
+    color: var(--accent) !important;
+    background-color: transparent !important;
+}
+
+#menuItemContainer, #chatList::-webkit-scrollbar-track, .verticalSeparator {
+    background: transparent !important;
+}
+
+.headerBar, #termsInfo, .youNewDiv, #mLevelCont, #compClassPHolder, #compBtnLst {
+    background-color: transparent;
+}
+
+input:checked + .slider, .settingsBtn, input:checked + .sliderSml, .loadoutBtn, #startServBtn, .endCard {
+  background-color: var(--accent) !important;
+}
+
+#cmpLeavInfo, #roundsDisplay, #seasonLabel, .verticalSeparatorInline, #rankedSoonTm, #faceItIconM, #voiceDisplay, #hudClassIcon, #hudClassImg, #maxHP, #healthBar, #challIcon, #ammoIcon, #reloadMsg, #reloadMsg::after, #weapDisplay, .weapItem, .weapIcon, #curGameInfo, #timerIcon, #ammoMax  {
+    display: none !important;
+}
+
+.compMenBtnS, .compSwpTmB, .compPlWpIcn {
+    background-color: transparent !important;
+    border: 4px solid transparent;
+}
+
+.progressBarInner, .xpBarB, .clsXPBarC, #cmpStatBarP {
+    background-image: linear-gradient(to right,#916e5b,#c49774);
+}
+
+#leaderDisplay::before {
+    content: "LEADERBOARD";
+    display: flex;
+    font-size: 24px;
+    color: #fff;
+    border-bottom: 4px solid var(--accent2);
+    border-image-slice: 1;
+    margin-bottom: 8px;
+    padding-left: 50px;
+    padding-bottom: 4px;
+}
+
+#chatList, chatInput {
+    text-align: center;
+}
+
+#chatList::-webkit-scrollbar {
+    width: 4px;
+}
+
+#endTableN, tabHolder, .tabBody, endTable {
+    background-color: var(--accent2) !important;
+}
+
+#chatList::-webkit-scrollbar-thumb, {
+    background: var(--accent2);
+    border-radius: 50px;
+}
+
+.chatItem {
+    font-size: 16px;
+    width: -webkit-fill-available;
+    box-shadow: rgba(255, 255, 255, 0.0) 0px 0px 0px 0px inset;
+    margin: 0px;
+    background-color: rgba(0,0,0,0.0) !important;
+    border-radius: 0;
+}
+
+.weaponChatIcon {
+    filter: brightness(0) drop-shadow(-2px 0px 1px #fff) drop-shadow(0px 0px 1px #fff) drop-shadow(2px 0px 1px #916e5b);
+}
+
+#chatInput {
+    text-align: center;
+    background-color: transparent;
+    border-bottom: 4px solid var(--accent2);
+}
+
+#uiBase.onMenu #spectateUI {
+    display: flex !important;
+    position: relative !important;
+    transform: translate(-50%, 50%);
+    left: 50%;
+    top: 200px;
+    z-index: 1;
+}
+
+#uiBase.onMenu #spectateHUD {
+    display: flex !important;
+    position: relative !important;
+
+}
+
+#uiBase.onMenu #specTeam0, #uiBase.onMenu #spec0, #uiBase.onMenu #spec1, #uiBase.onMenu #specNames, #uiBase.onMenu #specStats, #uiBase.onMenu #specContr, #uiBase.onMenu #specKPDContr, #uiBase.onMenu #specSus, #uiBase.onMenu #specTeam1, #uiBase.onMenu #specGMessage, #uiBase.onMenu #specGameInfo {
+    display: none !important
+}
+
+#uiBase.onMenu #specTimer {
+    display: flex !important;
+    position: relative !important;
+    font-size: 64px;
+    background-color: transparent;
+}
+
+.compClassPItm {
+    background-color: transparent;
+    border: 4px solid var(--accent2);
+}
+
+.compTScrB {
+    text-shadow: none;
+    background-color: transparent !important;
+    color: var(--accent) !important;
+}
+
+.compPLstIcn {
+    border: 3px solid transparent !important;
+    background-color: var(--accent2);
+    color: transparent !important;
+}
+
+#cmpStatBarP::after {
+    opacity: 1;
+    content: url(https://cdn.discordapp.com/attachments/726163389868539934/934118460663930930/floppaa.gif);
+    border: 5px solid var(--accent);
+    position: fixed;
+    right: calc(50% - 155px);
+    bottom: 40%;
+    background-size: 320px !important;
+    width: 320px !important;
+    height: 320px !important;
+}
+
+#healthValueHolder {
+    position: fixed;
+    right: 55%;
+    top: 75%;
+    background-color: transparent;
+    text-shadow: 4px 4px 0px var(--accent2) !important;
+}
+
+#healthValue {
+    position: fixed;
+    right: 55%;
+    top: 75%;
+    font-size: 64px;
+    color: var(--accent);
+    text-shadow: 4px 4px 0px var(--accent2) !important;
+}
+
+.healthBarSeg {
+    width: -webkit-fill-available;
+    margin-right: -1px;
+    background-color: transparent;
+}
+
+.hpBSeg {
+    box-shadow: none;
+}
+
+#ammoDisplay {
+    transform: unset;
+    letter-spacing: unset;
+}
+
+#ammoVal {
+    position: fixed;
+    font-size: 64px;
+    left: 55% !important;
+    top: 75% !important;
+    color: var(--accent);
+    text-shadow: 4px 4px 0px var(--accent2) !important;
+}
+
+#ammoDisplay {
+    transform: unset;
+    letter-spacing: unset;
+    position: fixed;
+    left: calc(50% - 32px);
+    height: 8px;
+    padding: 0;
+    width: 64px;
+    bottom: calc(50% - 32px);
+    border-radius: 0;
+    background-color: transparent;
+}
+
+#ammoDisplay::before {
+    opacity: 1;
+    content: " ";
+    background: url(https://cdn.discordapp.com/attachments/726163389868539934/934116690206265366/unnamed.png);
+    position: fixed;
+    right: 55%;
+    top: 65%;
+    background-size: 512px;
+    width: 512px;
+    height: 512px;
+    background-position-x: center;
+    background-position-y: top;
+}
+
+#ammoDisplay[style="background-size: 0%; display: inline-block;"] {
+    background-color: transparent;
+}
+
+#timerDisplay {
+    position: fixed;
+    left: 50%;
+    top: 1%;
+    transform: translateX(-50%);
+    background-color: transparent;
+    color: var(--accent);
+    text-shadow: 4px 4px 0px var(--accent2) !important;
+}
+
+#timerVal {
+    color: var(--accent) !important;
+    font-size: 64px;
+    text-shadow: 4px 4px 0px var(--accent2) !important;
+}
+
+.tScoreT, {
+    color: var(--accent);
+    text-shadow: 4px 4px 0px var(--accent2) !important;
+}
+
+.leftUIB {
+    background-color: transparent;
+}
+
+#killsIcon, #deathsIcon, #streakIcon, #kdIcon {
+    width: 28px;
+    height: 28px;
+}
+
+#killsVal, #deathsVal, #streakVal, #myScoreVal, #kdVal {
+    color: var(--accent);
+    text-shadow: 4px 4px 0px var(--accent2) !important;
+}
+
+.tScoreC {
+    background-color: var(--accent);
+}
+
+#initLoader {
+    background-image: linear-gradient(to right,#916e5b,#c49774);
+    color: transparent !important;
+}
+
+#loadEditrBtn {
+    display: none;
+}
+
+.lC-cube {
+    content: url(https://cdn.discordapp.com/attachments/726163389868539934/934133557876645919/l8e8aAQ.png);
+    background-size: 400px;
+    width: 750px;
+    height: 400px;
+    top: -150px;
+    right: -732px;
+}
+
+#loadInfoLHolder {
+    display: none;
+}
