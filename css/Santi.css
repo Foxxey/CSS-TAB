@@ -1,0 +1,348 @@
+/* Ui Scale 0.5*/
+
+@font-face {
+    font-family: gamefont;
+    src: url(https://fonts.gstatic.com/s/poppins/v15/pxiByp8kv8JHgFVrLBT5Z1xlFQ.woff2);
+}
+
+
+
+/* Hide Main Screen */
+
+#mainLogo,#tlInfHold,#newsHolder,.headerBarRight,#aHolder,#termsInfo,#voiceDisplay,#seasonLabel,#instructions,#mapInfoHolder {
+    display:none !important;
+}
+
+#endAMerger{
+    display:none;
+}
+
+#endAContainer {
+	display:none
+}
+
+#endMidHolder {
+    display:none;
+}
+
+
+/* Menu Left */
+
+#menuItemContainer {
+    position: absolute;
+    top: 92%;
+    width: 100%;
+    flex-direction: row;
+    background-color: #00000000;
+}
+
+.menuItemTitle {
+    display:none;
+}
+
+
+
+/* Sublogo Buttons */
+
+#subLogoButtons {
+    position: absolute;
+    bottom: 105.9px;
+    left: 50%;
+    transform: translate(-50%,0) scale(.95);
+}
+
+.button, .button:hover { 
+    border: hidden !important;
+    background: #00000000;
+}
+
+#rankedSoonTm{
+    display:none;
+}
+
+#faceItIconM {
+    display:none;
+}
+
+
+
+/* Chat on Menu*/
+
+#uiBase.onMenu #chatHolder {
+    left: -30px;
+    bottom: 100px;
+}
+
+#chatList {
+    background-color: #00000000;
+    text-align: center;
+}
+
+#chatInputHolder {
+    background-color: #00000000 ;
+    border: 2px solid rgb(0 0 0 / 0%);
+}
+
+#chatInput {
+    background-color: rgb(117 117 117);
+    border-radius: 25px;
+    border: 2px solid rgb(0 0 0 / 0%);
+}
+
+#chatSwitch.material-icons{
+    display:none;
+}
+
+
+
+/* Class Preview */
+
+#classPreviewCanvas {
+    position: absolute;
+    opacity: 0;
+    transition: all 0.3s;
+    top: 470px;
+    right: 250px;
+}
+
+#menuClassContainer:hover> #classPreviewCanvas {
+    opacity: 1;
+}
+
+#menuClassNameTag {
+    display:none;
+}
+
+#menuClassSubtext {
+    display:none;
+}
+
+#menuClassName {
+    display:none;
+}
+
+#customizeButton, #policeButton {
+    display: inline-block;
+    width: 200px;
+    right: 90px;
+    bottom: -100px
+}
+
+
+
+/* HeaderBar */
+
+#signedInHeaderBar {
+    background-color: transparent;
+    left: calc(50% - 170px);
+}
+
+.progressBar {
+    width: 100%;
+    margin-top: 0;
+    height: 10px;
+    padding: 2px;
+    background: rgb(117 117 117);
+    border-radius: 25px;
+}
+
+.progressBarInner {
+    background-image: linear-gradient(to right,#353535,#202020,94%,rgba(255,255,255,.8));
+    border-radius: 30px;
+}
+
+#mLevelCont {
+    display:none;
+}
+
+
+
+/* Health Ammo Weapon Icon */
+
+#healthValueHolder {
+    background-color: transparent;
+    padding: 0 !important;
+    margin: 0 !important;
+    bottom: 24%;
+    right: 67%;
+    transform: translateX(50%);
+    position: fixed;
+}
+
+#healthValue {
+    font-size: 35px !important;
+	text-shadow: 2px 2px 4px #000;
+}
+
+#maxHP {
+    display: none;
+}
+
+#healthBar {
+    display: none;
+}
+ 
+.hpBSeg, .healthBarSeg {
+    display: none;
+}
+
+#challIcon {
+    display: none !important;
+}
+
+#ammoDisplay {
+    background-color: transparent !important;
+    background-image: linear-gradient;
+    background-position-y: 92px;
+    border-radius: 0px;
+    padding: 0;
+    padding-bottom: 32px;
+    padding-top: 0;
+    padding-left: 0;
+    padding-right: 0 !important;
+    position: fixed;
+    bottom:21%;
+    left: 70%;
+    justify-content: center;
+    text-align: center;
+    transform: translateX(-50%);
+}
+
+#ammoVal {
+    font-size: 35px;
+    color: white;
+    text-shadow: 2px 2px 0px #000 !important;
+}
+
+#ammoMax {
+    display: none;
+}
+
+#ammoIcon {
+    display: none !important;
+}
+
+#reloadMsg {
+    display:none !important;
+}
+
+.weapItem {
+    position: absolute;
+    bottom: -90px;
+    right: 0;
+}   
+
+.weapIcon {
+    opacity: 0 !important;
+    transition-duration: 0.25s;
+    height: 0;
+}
+
+.weapIcon[style*="1"] {
+    opacity: 1 !important;
+    height: 70px;
+}
+
+#weapIconMel {
+    margin: 0 !important;
+}
+
+.weapKey {
+    display: none;
+}
+
+
+
+/* ClassIcon */
+
+#hudClassIcon {
+    display:none;
+}
+
+
+
+/* Timer Fps Ping Map info */
+
+#timerIcon {
+	opacity: 0;
+	margin-left: -30px;
+}
+
+#timerDisplay {
+	position: fixed;
+	background-color: transparent !important;
+	margin-top: -1%;
+	margin-left: 46.3%;
+    
+}
+
+#pingIcon {
+	color: white !important;
+}
+
+#ingameFPS {
+	color: white !important;
+}
+
+#curGameInfo {
+    position: absolute;
+    top: 0px;
+    left: 100px;
+}
+
+
+
+/* Score Board */
+
+#leaderDisplay {
+    background-color:  rgb(117 117 117);
+    border-radius: 25px;
+}
+
+
+/* KDA */
+
+
+
+.countIcon {
+    background-color: transparent;
+    color: #fff;
+    text-shadow: 2px 2px 4px #000;
+    font-size: 32px;
+}
+
+#killsIcon, #streakIcon {
+    width: 28px;
+    height: 28px;
+}
+
+#deathsVal,#deathsIcon {
+    display:none;
+}
+
+/* etc */
+
+.xpBarB {
+    background-image: linear-gradient(to right,#353535,#202020,94%,rgba(255,255,255,.8));
+}
+
+.quickJoin {
+    border:none;
+    font-size: 19px;
+}
+
+#menuWindow.dark {
+    background-color: rgb(117 117 117);
+    border-radius: 25px;
+}
+
+#uiBase.onMenu #spectButton {
+    top: 1px;
+    left: 96.5%;
+    bottom: -18%;
+}
+#specKPDContr {
+    background-image: url(https://cdn.discordapp.com/attachments/929091691061837824/940369495854288907/amogususususususus.png);
+    background-color: #cccccc;
+    background-size: cover;
+   }
