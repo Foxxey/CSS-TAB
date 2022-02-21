@@ -1,0 +1,27 @@
+/* a small css made by TrnLinh#7349 */
+
+/*pls don't change anything bellow */
+@import url(https://trnlinh.github.io/css/css/Black%20and%20White/black%20and%20white.css);
+/*pls dont change anything above */
+
+:root {
+  --black: #000000;
+  --white: white;
+  --trans: transparent;
+  --link: #3f3e3e;
+}
+
+* {
+  font-family: "Shizuru", cursive;
+}
+
+/*
+This css was made by TrnLinh
+If you want to make an update or fix issues please contact me:
+discord: TrnLinh#7349
+KrunkerIgn: hoanglinh0109
+
+Thank Abyy#1705 for this comment lol 
+*/
+
+/*feel free to edit anything*/
